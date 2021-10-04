@@ -96,7 +96,6 @@ class App extends Component {
           <AddIcon width="40" height="40" fill="#fff" />
         </IconButton>
 
-        {/* modalmodalmodalmodalmodalmodalmodalmodalmodal */}
         {showModal && (
           <Modal onClose={this.toggleModal}>
             <div className="form-section">
@@ -106,13 +105,7 @@ class App extends Component {
             </div>
           </Modal>
         )}
-        {/* modalmodalmodalmodalmodalmodalmodalmodalmodal */}
-        {/* <div className="form-section">
-          <b className="title">Phonebook</b>
-          <div className="form">
-            <Form onSubmit={this.addContact} />
-          </div>
-        </div> */}
+
         <div className="contacts-section">
           <b className="title">Contacts</b>
           <Filter value={filter} onChange={this.changeFilter} />
