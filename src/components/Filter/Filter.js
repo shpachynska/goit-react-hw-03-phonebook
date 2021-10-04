@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Filter.module.css";
 
 const Filter = ({ value, onChange }) => (
-  <div>
+  <div className={styles.Filter}>
     <label>
       Filter by name
       <input

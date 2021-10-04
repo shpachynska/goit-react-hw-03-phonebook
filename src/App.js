@@ -91,30 +91,19 @@ class App extends Component {
     const visibleContacts = this.getVisibleContacts();
     return (
       <Container>
+        <h1 className="title">Phonebook</h1>
         <IconButton onClick={this.toggleModal}>
           <AddIcon width="40" height="40" fill="#fff" />
         </IconButton>
-        {/* modalmodalmodalmodalmodalmodalmodalmodalmodal */}
 
+        {/* modalmodalmodalmodalmodalmodalmodalmodalmodal */}
         {showModal && (
           <Modal onClose={this.toggleModal}>
             <div className="form-section">
-              <b className="title">Phonebook</b>
               <div className="form">
                 <Form onSubmit={this.addContact} />
               </div>
             </div>
-            {/* <h1>My modal window</h1>
-            <p>
-              Lorem ipsum dolor sit amet, usu habeo erroribus cu, no ferri
-              melius per. Nec graeci reprehendunt et, sit natum aliquam atomorum
-              no. Enim assum instructior ut mel, et sit utroque dolores, meis
-              meliore at duo. Dicam audiam legendos ne vim, nec id dignissim
-              liberavisse, ne per tation atomorum volutpat.
-            </p>
-            <button type="button" onClick={this.toggleModal}>
-              Close
-            </button> */}
           </Modal>
         )}
         {/* modalmodalmodalmodalmodalmodalmodalmodalmodal */}

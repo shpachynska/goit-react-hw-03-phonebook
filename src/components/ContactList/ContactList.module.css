@@ -1,3 +1,7 @@
+.Contact__list {
+  padding: 0;
+}
+
 .ContactList__item {
   position: relative;
   display: flex;
